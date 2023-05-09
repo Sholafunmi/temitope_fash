@@ -1,0 +1,1336 @@
+*,
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.navbar{
+    width: 100%;
+    height: fit-content;
+    background-color:black;
+    font-family: 'Poiret One', cursive;
+  
+}
+
+.navbar-brand{
+    /* color: rgb(154, 245, 239); */
+}
+.container-fluid{
+    width: 100%;
+    /* justify-content: space-between; */
+}
+.container-fluid a{
+    color: rgb(154, 245, 239);
+    font-size: 20px;
+}
+.navbar-nav li a{
+     color: rgb(154, 245, 239);
+}
+.navbar-nav li a:hover{
+    color: #e3e9e3;
+}
+.collapse{
+   justify-content:flex-end;
+   /* height: 100vh; */
+   /* background-color: #610606; */
+   /* display: flex;
+   flex-direction: column; */
+   /* align-items: center; */
+   /* justify-content: center; */
+   /* gap: 2em; */
+}
+
+
+
+
+
+
+
+  
+
+@media only screen and (min-width:928px){
+main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+
+}
+header{
+ display: flex;
+ flex-direction: column;
+ width: 100%;
+ height: 100vh;
+ align-items: center;
+ background-color: black;
+  overflow: hidden;
+}
+.header-content{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 100vh;
+    align-items: center;
+}
+/* nav{
+    position: fixed;
+    background-color: black;
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.nav-content{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;/
+}
+.logo{
+    font-family: 'Poiret One', cursive;
+    font-weight: bold;
+    font-size: 30px;
+}
+.logo a{
+    text-decoration: none;
+    color: rgb(154, 245, 239);
+}
+.menu{
+    display: flex;
+}
+.menu-items{
+    display: flex;
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    gap: 2em;
+}
+.menu-items li{
+    list-style: none; 
+} 
+.menu-items li a{
+    font-family: 'Poiret One', cursive;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(154, 245, 239);
+    transition: all 0.3s ease;
+} 
+
+.menu-items li a:hover{
+    color:rgb(238,201,7);
+    transform: scale(1.2);
+}
+.hamburger{
+    display: none;
+} */
+
+
+
+/* HERO SECTION STARTS HERE  */
+.hero{
+    margin-top: 10vh;
+    /* border: 2px solid #fff; */
+ width: 100%;
+ height: 90vh;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ background-image: url(./images/rbg1-trimmed.png);
+ /* background-image: url(./images/rbg6.png); */
+ background-position:right;
+ background-size: contain;
+ background-repeat: no-repeat;
+ 
+}
+.hero-content{
+    /* border: 2px solid #fff; */
+    width: 90%;
+    height: fit-content;
+    display: flex;
+   
+    justify-content: space-between;
+
+}
+.hero-text{
+    width: fit-content;
+    height: fit-content;
+    text-align: center;
+
+}
+.hero-text h1{
+    font-size: 70px;
+    font-weight: bolder;
+    /* color: rgb(238,201,7); */
+    color: rgb(154, 245, 239);
+    font-family: 'Poiret One', cursive;
+}
+.hero-text p{
+    font-size: 25px;
+    /* color: rgb(238,201,7); */
+    color: rgb(154, 245, 239);
+    font-family: 'Poiret One', cursive;
+}
+.hero-text p span{
+    color: rgb(154, 245, 239);
+}
+/* SOCIALS  */
+.socials{
+ border: 0.5px solid rgb(238,201,7);
+ padding: 1%;
+ position: fixed;
+ /* position: absolute; */
+ top: 70%;
+ left: 1%;
+ width: fit-content;
+ height: fit-content;
+ display: flex;
+}
+.social-links{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.social-links a{
+    text-decoration: none;  
+}
+.social-links a ion-icon {
+    color: rgb(154, 245, 239);
+    transition: all 0.3s ease;
+}
+.social-links a ion-icon:hover{
+    color: rgb(161, 136, 10);
+    transform: scale(1.2);
+}
+
+.socials img{
+    width: 25px; 
+}
+
+
+/* ABOUT SECTION STARTS HERE  */
+.about{
+    width: 100%;
+    min-height: 100vh;
+    /* background-color: rgb(12,75,71); */
+    background-color: #fff;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 2em;
+}
+.about-intro{
+ margin-top: 1.5em;
+ font-family: 'Poiret One', cursive;
+}
+.about-content{
+    /* border: 2px solid #fff; */
+    margin-top: 2em;
+    width: 80%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    /* gap: 2em; */
+
+}
+.top{
+    /* border: 2px solid #fff; */
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+    gap: 1em;
+    align-items: center;
+    justify-content: center;
+}
+.about-img{
+    border: 5px solid rgb(154, 245, 239);
+    border-radius: 10%;
+    width: 300px;
+    height: 350px;
+    background-image: url(./images/DSC06028-trimed.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.about-text{
+    /* border: 2px solid #772727; */
+    width: 100%;
+    height: fit-content;
+    color: black;
+    text-align: justify;
+}
+.about-text p{
+    font-size: 20px;
+}
+.bottom{
+    /* border: 2px solid #772727; */
+    width: 100%;
+    height: fit-content;
+     align-items: center;
+     justify-content: center;
+}
+.auto-biography{
+    
+}
+.auto-biography p{
+    font-size: 20px;
+    /* text-align: left; */
+    text-align: justify;
+}
+
+/* SERVICES SECTION STARTS HERE  */
+.services{
+    /* border: 2px solid; */
+    height: fit-content;
+    width: 100%;
+    background-color: rgb(12,75,71);
+    color:#e3e9e3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.services-content{
+    margin-top: 2em;
+    margin-bottom: 3em;
+     width: 80%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+}
+.services-intro{
+   margin-bottom: 1em;
+   font-family: 'Poiret One', cursive;
+}
+
+.service1{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.service1 h2{
+    margin-bottom: 1em;
+    font-family: 'Poiret One', cursive;
+}
+.service1-content{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+}
+.appraisal-shoutout{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3em;
+
+}
+.online{
+    /* border: 2px solid rgb(238,201,7); */
+    padding: 2%; 
+    width: 500px;
+    /* min-height: 480px; */
+    min-height: 650px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1em;
+}
+.online .bookMe{
+  /* align-self: self-end; */
+}
+.online, .offline, .cocktails-and-bouquets, .wedding-receptions{
+    background-color: rgb(230, 228, 221);
+    color: black;
+}
+.online:hover, .offline:hover, .cocktails-and-bouquets:hover, .wedding-receptions:hover{
+   box-shadow: 4px 8px 0px rgb(238,201,7);
+   transform: scale(1.1);
+   
+}
+  
+.online p, .offline p, coperate-events p{
+    font-size: 20px;
+}
+.offline{
+    /* border: 2px solid rgb(238,201,7); */
+    width: 500px;
+    min-height: 650px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 1%;
+    gap: 1em;
+
+}
+.bookMe{
+background-color: rgb(12,75,71);
+ color: rgb(238,201,7);
+ padding: 15px 25px;
+ border-radius: 8px;
+ width: fit-content;
+ align-self: center;
+ text-decoration: none;
+}
+.service2{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.service2 h2{
+    margin-bottom: 1em;
+    font-family: 'Poiret One', cursive;
+}
+.service2-content{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+}
+.coperate-events{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3em;
+}
+.wedding-receptions{
+
+    width: 500px;
+    /* height: fit-content; */
+    min-height: 200px;
+    justify-content: center;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 1%;
+    gap: 1em;
+}
+.cocktails-and-bouquets{
+    justify-content: center;
+    width: 500px;
+    min-height: 200px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 1%;
+    gap: 1em;
+}
+
+
+
+/* APPRAISAL SKITS  */
+.appraisal-skits{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #e3e9e3;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #000;
+    font-family: 'Poiret One', cursive;
+}
+.appraisal-contents{
+    width: 80%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+}
+.appraisal-videos{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10em;
+    
+
+}
+.random-request, .special-request{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.appraisal-videos video {
+    width: max-content;
+    height: 400px;
+}
+
+/* MUSIC  */
+.my-music{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.music{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    /* align-items: center;
+    justify-content: center; */
+
+}
+.music p{
+    font-size: 18px;
+    color: black;
+    font-weight: 600;
+}
+
+/* EVENTS  */
+.events{
+    background-color: #eaf1ea;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.events-contents{
+    width: 80%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+  align-items: center;
+}
+.events-contents h1{
+  margin-bottom: 2em;
+  /* margin-top: 1em; */
+  font-family: 'Poiret One', cursive;
+}
+
+.my-event{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    gap: 5em;
+
+}
+.event1, .event2{
+    background-color: rgb(224, 223, 215);
+    color:black;
+    border-radius: 10px;
+    overflow: hidden;
+    min-height:500px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+    align-items: center;
+    text-align: center;
+}
+
+.event1:hover, .event2:hover{
+    box-shadow: 4px 8px 0px rgb(238,201,7);
+    transform: scale(1.1);
+}
+.event1-img, .event2-img{
+     height: 40%;
+    width: 100%;
+     background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.event1-img{
+    background-image:url(./images/artitude.jpg);
+  
+}
+.event2-img{
+  background-image: url(./images/ArtWithFashIMG.jpg);
+}
+.title{
+    /* border: 2px solid yellow; */
+
+}
+.event1 p, .event2 p{
+    /* border: 2px solid yellow; */
+    padding: 0 10px;
+}
+.my-event .bookMe{
+    margin-bottom: 1em;
+}
+
+
+ /* videos  */
+ .live-performances{
+    padding-top: 3em;
+    padding-bottom: 5em;
+    background-color: rgb(10, 27, 27);
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.live-performances h1{
+    font-weight: bold;
+    margin-bottom: 1em;
+    color: #e3e9e3;
+    font-family: 'Poiret One', cursive;
+
+}
+.live-performances-content{
+    width: 80%;
+    height: fit-content;
+    display: flex;
+    text-align: center;
+    align-items: center;
+     gap: 2em;
+     justify-content: center;
+}
+.videos{
+    width: 95%;
+    height: 250px;
+     
+}
+
+
+
+
+/* FOOTER STARTS HERE  */
+footer{
+/* border: 2px solid red; */
+/* background-color: black; */
+background-color: black;
+height: 10vh;
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+font-family: 'Poiret One', cursive;
+}
+.footer-content{
+    color: #e3e9e3;
+    height: fit-content;
+    display: flex;
+    width: 80%;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.left .logo{
+    font-size: 20px;
+}
+.left .logo span{
+    font-size: 15px;
+    color: #e3e9e3;
+}
+.RIGHT{
+
+}
+.developer{
+  text-decoration: none;
+  color: #e3e9e3;
+  font-size: 15px;
+}
+
+
+
+.footer-socials{
+    /* width: 100%; */
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+   .footer-social-links{
+       display: flex;
+       gap: 1.5em;
+   }
+   .footer-social-links a{
+       text-decoration: none;  
+   }
+   .footer-social-links a ion-icon {
+       color: rgb(154, 245, 239);
+       transition: all 0.3s ease;
+       font-size: 18px;
+       font-weight: lighter;
+   }
+   .footer-social-links a ion-icon:hover{
+       color: #fff;
+       transform: scale(1.2);
+   }
+
+
+}
+
+
+
+
+
+
+
+
+/* MOBILE SECTION FOR ALL STARTS HERE  */
+@media only screen and (max-width:928px){
+   *, 
+   body{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: fit-content;
+    
+    }
+    header{
+     display: flex;
+     flex-direction: column;
+     width: 100%;
+     min-height: 100vh;
+     align-items: center;
+    overflow: hidden;
+    background-color: black;
+}
+    .header-content{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        align-items: center;
+    }
+    /* nav{
+        position: fixed;
+        background-color: black;
+        height: 10vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+    }
+    .nav-content{
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .logo{
+        font-family: 'Poiret One', cursive;
+        font-weight: bold;
+        font-size: 20px;
+    }
+    .logo a{
+        text-decoration: none;    
+        color: rgb(154, 245, 239);
+    }
+     .menu{
+        display: none;
+    }  */
+
+
+/* gpt  */
+
+
+
+    
+
+    
+    
+    /* HERO SECTION STARTS HERE  */
+    .hero{
+        margin-top: 10vh;
+        /* border: 2px solid #fff; */
+     width: 100%;
+     min-height: 90vh;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;     
+
+     background-image: url(./images/rbg7-cut.png);
+      background-position:top;
+      background-size: cover;
+      background-repeat: no-repeat; 
+    }
+    .hero-content{
+        width: 95%;
+        height: 100%;
+        display: flex;
+        flex-direction:column ;
+        justify-content:end ;
+        margin-bottom: 5em;
+    
+    }
+    .hero-text{
+        width: 100%;
+        height: fit-content;
+        text-align: center;
+    }
+    .hero-text h1{
+        font-size: 40px;
+        font-weight: bolder;
+        color: rgb(154, 245, 239);
+        font-family: 'Poiret One', cursive;
+    }
+    .hero-text p{
+        font-size: 18px;
+        color: rgb(154, 245, 239);
+        font-family: 'Poiret One', cursive;
+    }
+    .hero-text p span{
+        color: rgb(154, 245, 239);
+    }
+    /* .imgSectionDesign{
+        position: absolute;
+        top: 30%;
+        right: 13%;
+      
+    
+    
+        border: 2px solid #aa0a0a;
+        height: 450px;
+        width: 400px;
+        border-radius: 100%;
+        background-color:   ;
+        background: linear-gradient(to bottom, rgb(12,75,71),rgb(238,201,7));
+        
+    } */
+    .socials{
+     width: 100%;
+     height: fit-content;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin-top: 1em;
+    }
+    .social-links{
+        display: flex;
+        gap: 1.5em;
+    }
+    .social-links a{
+        text-decoration: none;  
+    }
+    .social-links a ion-icon {
+        color: rgb(154, 245, 239);
+        transition: all 0.3s ease;
+        font-size: 18px;
+        font-weight: lighter;
+    }
+    .social-links a ion-icon:hover{
+        color: #fff;
+        transform: scale(1.2);
+    }
+    
+    /* .socials img{
+        width: 25px; 
+    } */
+    
+    
+    /* ABOUT SECTION STARTS HERE  */
+    .about{
+        width: 100%;
+        /* min-height: 100vh; */
+        height: fit-content;
+        /* background-color: rgb(12,75,71); */
+        background-color: #fff;
+        color: black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 2em;
+    }
+    .about-intro{
+     margin-top: 1.5em;
+     font-family: 'Poiret One', cursive;
+    }
+    .about-content{
+        margin-top: 2em;
+        width: 90%;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        /* gap: 2em; */
+    
+    }
+    .top{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: fit-content;
+        gap: 1em;
+        align-items: center;
+        justify-content: center;
+    }
+    .about-img{
+        border: 5px solid rgb(74, 192, 184);
+        border-radius: 10%;
+        /* width: 300px; */
+        width: 95%;
+        height: 350px;
+        background-image: url(./images/DSC06028-trimed.jpg);
+        background-position: top;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .about-text{
+        width: 100%;
+        height: fit-content;
+        color: black;
+        justify-content: center;
+        text-align: justify;
+    }
+    .about-text p{
+        font-size: 20px;
+    }
+    .bottom{
+        width: 100%;
+        height: fit-content; 
+    }
+    .auto-biography{
+        /* background-color: brown; */
+        text-align: justify;
+      
+       height:50vh ;
+       
+         overflow: scroll;
+        width: 100%;
+        
+    }
+    .auto-biography p{
+        font-size: 20px;
+        justify-content: center;
+        /* border: 2px solid red */
+     
+    }
+    
+    /* SERVICES SECTION STARTS HERE  */
+    .services{
+        height: fit-content;
+        width: 100%;
+        background-color: rgb(12,75,71);
+        color:#e3e9e3;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .services-content{
+        margin-top: 2em;
+        margin-bottom: 3em;
+         width: 90%;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2em;
+    }
+    .services-intro{
+       /* margin-bottom: 1em; */
+       font-family: 'Poiret One', cursive;
+    }
+    
+    .service1{
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .service1 h2{
+        margin-bottom: 1em;
+        font-family: 'Poiret One', cursive;
+    }
+    .service1-content{
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        align-items: center;
+    }
+    .appraisal-shoutout{
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 3em;
+    
+    }
+    .online{
+        /* padding: 2%;  */
+        width: 95%;
+        min-height: 480px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 1em;
+    }
+    .online .bookMe{
+      /* align-self: self-end; */
+    }
+    .online, .offline, .cocktails-and-bouquets, .wedding-receptions{
+        background-color: rgb(230, 228, 221);
+        color: black;
+        padding: 2em 2em;
+    }
+    .online:hover, .offline:hover, .cocktails-and-bouquets:hover, .wedding-receptions:hover{
+       box-shadow: 4px 8px 0px rgb(238,201,7);
+       transform: scale(1.1);
+       
+    }
+      
+    .online p, .offline p, coperate-events p{
+        font-size: 20px;
+    }
+    .offline{
+        /* border: 2px solid rgb(238,201,7); */
+        width: 95%;
+        min-height: 480px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        /* padding: 1%; */
+        gap: 1em;
+        padding: 2em 2em;
+    
+    }
+    .bookMe{
+    background-color: rgb(12,75,71);
+     color: rgb(238,201,7);
+     padding: 15px 25px;
+     border-radius: 8px;
+     width: fit-content;
+     align-self: center;
+     text-decoration: none;
+    }
+    .service2{
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 2em;
+    }
+    .service2 h2{
+        margin-bottom: 1em;
+        font-family: 'Poiret One', cursive;
+    }
+    .service2-content{
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        align-items: center;
+    }
+    .coperate-events{
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 3em;
+    }
+    .wedding-receptions{
+        width: 95%;
+        height: fit-content;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 1em;
+    }
+    .wedding-receptions h3,  .cocktails-and-bouquets h3{
+        align-self: center;
+        /* width: 70%; */
+    }
+    .cocktails-and-bouquets{
+        width: 95%;
+          height: fit-content;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 1em;
+    }
+
+
+
+/* APPRAISAL SKITS  */
+.appraisal-skits{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #e3e9e3;
+    /* border-bottom: 1px solid #000; */
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2em 0;
+    font-family: 'Poiret One', cursive;
+}
+.appraisal-contents{
+    width: 80%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+}
+.appraisal-videos{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    
+
+}
+.random-request, .special-request{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.appraisal-videos video {
+    width: 100%;
+    height: 300px;
+}
+/* MUSIC  */
+.my-music{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.music{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    /* align-items: center;
+    justify-content: center; */
+
+}
+.music p{
+    font-size: 18px;
+    color: black;
+    font-weight: 600;
+}
+
+
+
+    
+
+    /* EVENTS  */
+    .events{
+        background-color: #ebf1eb;
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 4em;
+    }
+    .events-contents{
+        width: 90%;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+      align-items: center;
+    }
+    .events-contents h1{
+      margin-bottom: 1em;
+      margin-top: 2em;
+      font-family: 'Poiret One', cursive;
+    }
+    
+    .my-event{
+        width: 90%;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 3em;
+    
+    }
+    .event1, .event2{
+        background-color: rgb(211, 209, 200);
+        color:black;
+        border-radius: 10px;
+        overflow: hidden;
+        height:500px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: .5em;
+        align-items: center;
+        text-align: center;
+        padding-bottom: .5em;
+        /* padding: 0 12px .5em 12px; */
+      
+    }
+    .event2{
+        height:600px;
+        width: 100%;
+    }
+    .event1:hover, .event2:hover{
+        box-shadow: 4px 8px 0px rgb(238,201,7);
+        transform: scale(1.1);
+    }
+    .event1-img, .event2-img{
+         height: 40%;
+        width: 100%;
+         background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .event1-img{
+        background-image:url(./images/artitude.jpg);
+      
+    }
+    .event2-img{
+      background-image: url(./images/ArtWithFashIMG.jpg);
+    }
+    .events .bookMe{
+        /* margin-top: 1em; */
+    }
+    .event1 p, .event2 p{
+        padding: 0 12px;
+    }
+
+    /* videos  */
+    .live-performances{
+
+        padding-top: 3em;
+        padding-bottom: 5em;
+        background-color: rgb(10, 27, 27);
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .live-performances h1{
+        font-weight: bold;
+        margin-bottom: 1em;
+        color: #e3e9e3;
+        font-family: 'Poiret One', cursive;
+
+    }
+    .live-performances-content{
+        width: 95%;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+         gap: 2em;
+         justify-content: center;
+    }
+    .videos{
+        /* justify-content: center; */
+        align-items: center;
+        width: 95%;
+        height: 250px;
+         
+    }
+    
+    
+    
+    
+    /* FOOTER STARTS HERE  */
+    footer{
+    /* border: 2px solid red; */
+    background-color: black;
+    /* min-height: 15vh; */
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poiret One', cursive;
+    padding: 1em 0;
+    }
+    .footer-content{
+        color: #e3e9e3;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+        font-family: Arial, Helvetica, sans-serif;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1em;
+    
+    }
+    .left .logo{
+        font-size: 20px;
+    }
+    .left .logo span{
+        font-size: 15px;
+        color: #e3e9e3;
+    }
+    .developer{
+      text-decoration: none;
+      color: #e3e9e3;
+      font-size: 15px;
+    }
+
+    .footer-socials{
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* margin-top: 1em; */
+       }
+       .footer-social-links{
+           display: flex;
+           gap: 1.5em;
+       }
+       .footer-social-links a{
+           text-decoration: none;  
+       }
+       .footer-social-links a ion-icon {
+           color: rgb(154, 245, 239);
+           transition: all 0.3s ease;
+           font-size: 18px;
+           font-weight: lighter;
+       }
+       .footer-social-links a ion-icon:hover{
+           color: #fff;
+           transform: scale(1.2);
+       }
+
+      
+       
+}
+
+
