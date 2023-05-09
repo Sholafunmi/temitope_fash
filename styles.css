@@ -45,7 +45,15 @@ body{
 
 
 
-
+.logo{
+    font-family: 'Poiret One', cursive;
+    font-weight: bold;
+    font-size: 30px;
+}
+.logo a{
+    text-decoration: none;
+    color: rgb(154, 245, 239);
+}
 
 
   
@@ -73,6 +81,15 @@ header{
     width: 80%;
     height: 100vh;
     align-items: center;
+}
+.logo{
+    font-family: 'Poiret One', cursive;
+    font-weight: bold;
+    font-size: 30px;
+}
+.logo a{
+    text-decoration: none;
+    color: rgb(154, 245, 239);
 }
 /* nav{
     position: fixed;
@@ -1328,7 +1345,9 @@ font-family: 'Poiret One', cursive;
            color: #fff;
            transform: scale(1.2);
        }
-
+       footer .right a span{
+        border-bottom: 2px solid;
+       }
       
        
 }
