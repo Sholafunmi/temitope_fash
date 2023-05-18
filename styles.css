@@ -5,59 +5,102 @@ body{
     box-sizing: border-box;
 }
 
-
-.navbar{
+nav{
+    /* border: 2px solid red; */
     width: 100%;
     height: fit-content;
-    background-color:black;
-    font-family: 'Poiret One', cursive;
-  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-
-.navbar-brand{
-    /* color: rgb(154, 245, 239); */
-}
-.container-fluid{
-    width: 100%;
-    /* justify-content: space-between; */
-}
-.container-fluid a{
-    color: rgb(154, 245, 239);
-    font-size: 20px;
-}
-.navbar-nav li a{
-     color: rgb(154, 245, 239);
-}
-.navbar-nav li a:hover{
-    color: #e3e9e3;
-}
-.collapse{
-   justify-content:flex-end;
-   /* height: 100vh; */
-   /* background-color: #610606; */
-   /* display: flex;
-   flex-direction: column; */
-   /* align-items: center; */
-   /* justify-content: center; */
-   /* gap: 2em; */
-}
-
-
-
-
-.logo{
-    font-family: 'Poiret One', cursive;
-    font-weight: bold;
-    font-size: 30px;
-}
-.logo a{
+nav .logo{
     text-decoration: none;
     color: rgb(154, 245, 239);
+    font-family: 'Poiret One', cursive;
+}
+.menu-bar{
+    /* border: 2px solid red; */
+    display: flex;
+    gap: 2em;
+    width: fit-content;
+    height: fit-content;
+}
+.menu-bar .menu-items{
+    list-style: none;
+}
+.menu-items a{
+ text-decoration: none;
+   color: rgb(154, 245, 239);
+   font-size: 18px;
 }
 
+.hamburger{
+    width: 32px;
+    height: 28px;
+    cursor: pointer;
+}
+.layer1, .layer2, .layer3{
+    width: 100%;
+    height: 4px;
+    background: rgb(154, 245, 239);
+    margin: 4px;
 
+}
+
+/* side menu bar  */
+.side-menu-bar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+   height: 100vh;
+    background-color: rgb(1, 10, 10);    
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+    transition: all 0.3s linear;
+    transform: translate(100%);
+    /* overflow: scroll; */
+
+}
+.close-menu-bar{
+    color: rgb(154, 245, 239);
+    font-size: 50px;
+    margin-top: 1em;
+    margin-left: .5em;
+    cursor: pointer;
+}
+
+.side-menu{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+    justify-content: center;
+    align-items: center;
+}
+.side-menu-items{
+color: rgb(154, 245, 239);
+font-size: 25px;
+font-family: 'Poiret One', cursive;
+list-style: none;
+}
+.side-menu-items li{
+ color: rgb(154, 245, 239);
+}
+.side-menu-items a{
+text-decoration: none;
+color: rgb(154, 245, 239);
+}
+.side-menu-items a:hover{
+    color: rgb(211, 209, 200);
+    }
   
 
+
+/* DESKTOP RESPONSIVENES  */
 @media only screen and (min-width:928px){
 main{
     display: flex;
@@ -87,61 +130,10 @@ header{
     font-weight: bold;
     font-size: 30px;
 }
-.logo a{
-    text-decoration: none;
-    color: rgb(154, 245, 239);
-}
-/* nav{
-    position: fixed;
-    background-color: black;
-    height: 10vh;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-.nav-content{
-    width: 80%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;/
-}
-.logo{
-    font-family: 'Poiret One', cursive;
-    font-weight: bold;
-    font-size: 30px;
-}
-.logo a{
-    text-decoration: none;
-    color: rgb(154, 245, 239);
-}
-.menu{
-    display: flex;
-}
-.menu-items{
-    display: flex;
-    width: fit-content;
-    height: 100%;
-    display: flex;
-    gap: 2em;
-}
-.menu-items li{
-    list-style: none; 
-} 
-.menu-items li a{
-    font-family: 'Poiret One', cursive;
-    font-weight: bold;
-    text-decoration: none;
-    color: rgb(154, 245, 239);
-    transition: all 0.3s ease;
-} 
-
-.menu-items li a:hover{
-    color:rgb(238,201,7);
-    transform: scale(1.2);
-}
 .hamburger{
     display: none;
-} */
+}
+
 
 
 
@@ -736,6 +728,18 @@ font-family: 'Poiret One', cursive;
         height: 100vh;
         align-items: center;
     }
+    .menu-bar{
+        display: none;
+     }
+    nav{
+         width: 90%;
+         margin-top: .5em;
+         display: flex;
+         align-items: center;
+    }
+ 
+
+
     /* nav{
         position: fixed;
         background-color: black;
@@ -1018,6 +1022,8 @@ font-family: 'Poiret One', cursive;
       
     .online p, .offline p, coperate-events p{
         font-size: 20px;
+        /* text-align: left; */
+      
     }
     .offline{
         /* border: 2px solid rgb(238,201,7); */
@@ -1309,6 +1315,12 @@ font-family: 'Poiret One', cursive;
     
     }
     .left .logo{
+        font-size: 20px;
+    }
+    .left .logo a{
+        text-decoration: none;
+        color: rgb(154, 245, 239);
+    }
         font-size: 20px;
     }
     .left .logo span{
