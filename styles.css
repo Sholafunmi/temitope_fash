@@ -6,7 +6,8 @@ body{
 }
 
 nav{
-    /* border: 2px solid red; */
+    position: fixed;
+    background-color: black;
     width: 100%;
     height: fit-content;
     display: flex;
@@ -17,6 +18,7 @@ nav .logo{
     text-decoration: none;
     color: rgb(154, 245, 239);
     font-family: 'Poiret One', cursive;
+    font-size: 25px;
 }
 .menu-bar{
     /* border: 2px solid red; */
@@ -58,11 +60,11 @@ nav .logo{
     /* background-color: red; */
     display: flex;
     flex-direction: column;
-    z-index: 10;
+   
     transition: all 0.3s linear;
     transform: translate(100%);
-    /* overflow: scroll; */
-
+    overflow: scroll;
+    z-index: 10;
 }
 .close-menu-bar{
     color: rgb(154, 245, 239);
@@ -732,50 +734,13 @@ font-family: 'Poiret One', cursive;
         display: none;
      }
     nav{
-         width: 90%;
-         margin-top: .5em;
+         width: 100%;
+         padding: 1em 5%;
          display: flex;
          align-items: center;
+         z-index: 1;
     }
- 
-
-
-    /* nav{
-        position: fixed;
-        background-color: black;
-        height: 10vh;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        overflow: hidden;
-    }
-    .nav-content{
-        width: 90%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    .logo{
-        font-family: 'Poiret One', cursive;
-        font-weight: bold;
-        font-size: 20px;
-    }
-    .logo a{
-        text-decoration: none;    
-        color: rgb(154, 245, 239);
-    }
-     .menu{
-        display: none;
-    }  */
-
-
-/* gpt  */
-
-
-
-    
-
-    
+     
     
     /* HERO SECTION STARTS HERE  */
     .hero{
