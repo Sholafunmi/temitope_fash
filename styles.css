@@ -127,6 +127,9 @@ header{
     height: 100vh;
     align-items: center;
 }
+nav{
+    padding: .8em 5%;
+}
 .logo{
     font-family: 'Poiret One', cursive;
     font-weight: bold;
@@ -648,18 +651,25 @@ font-family: 'Poiret One', cursive;
 .left .logo{
     font-size: 20px;
 }
+
+.left .logo a{
+    text-decoration: none;
+    color: rgb(154, 245, 239);
+    font-size: 25px;
+}
 .left .logo span{
     font-size: 15px;
     color: #e3e9e3;
 }
-.RIGHT{
 
-}
 .developer{
   text-decoration: none;
   color: #e3e9e3;
   font-size: 15px;
 }
+footer .right a span{
+    border-bottom: 2px solid;
+   }
 
 
 
@@ -1285,9 +1295,9 @@ font-family: 'Poiret One', cursive;
     .left .logo a{
         text-decoration: none;
         color: rgb(154, 245, 239);
-    }
         font-size: 20px;
     }
+        
     .left .logo span{
         font-size: 15px;
         color: #e3e9e3;
@@ -1326,8 +1336,7 @@ font-family: 'Poiret One', cursive;
        footer .right a span{
         border-bottom: 2px solid;
        }
-      
-       
-}
+           
 
 
+    }
