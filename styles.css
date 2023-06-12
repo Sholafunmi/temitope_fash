@@ -353,7 +353,7 @@ nav{
     padding: 2%; 
     width: 500px;
     /* min-height: 480px; */
-    min-height: 650px;
+    min-height: 800px;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -373,13 +373,14 @@ nav{
    
 }
   
-.online p, .offline p, coperate-events p{
+.online p, .offline p, coperate-events p, .wedding-receptions p, .cocktails-and-bouquets p{
     font-size: 20px;
+  
 }
 .offline{
     /* border: 2px solid rgb(238,201,7); */
     width: 500px;
-    min-height: 650px;
+    min-height: 800px;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -426,7 +427,7 @@ background-color: rgb(12,75,71);
 
     width: 500px;
     /* height: fit-content; */
-    min-height: 200px;
+    min-height: 250px;
     justify-content: center;
     border-radius: 10px;
     display: flex;
@@ -438,7 +439,7 @@ background-color: rgb(12,75,71);
 .cocktails-and-bouquets{
     justify-content: center;
     width: 500px;
-    min-height: 200px;
+    min-height: 250px;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -1062,6 +1063,9 @@ footer .right a span{
     .wedding-receptions h3,  .cocktails-and-bouquets h3{
         align-self: center;
         /* width: 70%; */
+    }
+    .wedding-receptions p,  .cocktails-and-bouquets p{
+        font-size: 20px;
     }
     .cocktails-and-bouquets{
         width: 95%;
