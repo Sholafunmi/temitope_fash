@@ -104,6 +104,15 @@ color: rgb(154, 245, 239);
     #more{
         display: none;
     }
+    #myBtn{
+        background-color: rgb(12,75,71);
+        color:rgb(238,201,7)  ;
+        font-size: 18px;
+        font-weight: bold;
+        padding: 6px 8px;
+        border-radius: 8px;
+        font-family: 'Poiret One', cursive;
+    }
 /* DESKTOP RESPONSIVENES  */
 @media only screen and (min-width:928px){
 main{
@@ -1108,7 +1117,6 @@ footer .right a span{
 .appraisal-skits-mobile{
     width: 100vh;
     min-height: 100vh;
-    background-color: rgb(2, 10, 10);
     /* background-color: rgb(1, 10, 10); */
     /* border-bottom: 1px solid #000; */
     color: #e3e9e3;
@@ -1170,10 +1178,6 @@ font-size: 23px;
     display: flex;
     flex-direction: column;
     text-align: center;
-   
-    /* align-items: center;
-    justify-content: center; */
-
 }
 .music p{
     font-size: 18px;
