@@ -43,7 +43,7 @@ nav .logo{
 }
 .layer1, .layer2, .layer3{
     width: 100%;
-    height: 4px;
+    height: 3px;
     background: rgb(154, 245, 239);
     margin: 4px;
 
@@ -99,8 +99,6 @@ color: rgb(154, 245, 239);
 .side-menu-items a:hover{
     color: rgb(211, 209, 200);
     }
-  
-
 
 /* DESKTOP RESPONSIVENES  */
 @media only screen and (min-width:928px){
@@ -451,6 +449,9 @@ background-color: rgb(12,75,71);
 
 
 /* APPRAISAL SKITS  */
+.appraisal-skits-mobile{
+    display: none;
+}
 .appraisal-skits{
     width: 100%;
     min-height: 100vh;
@@ -494,6 +495,9 @@ background-color: rgb(12,75,71);
 }
 
 /* MUSIC  */
+.my-music-mobile{
+    display: none;
+}
 .my-music{
     width: 100%;
     height: fit-content;
@@ -867,7 +871,7 @@ footer .right a span{
         display: flex;
         flex-direction: column;
         /* gap: 2em; */
-    
+       
     }
     .top{
         display: flex;
@@ -904,21 +908,36 @@ footer .right a span{
         height: fit-content; 
     }
     .auto-biography{
-        /* background-color: brown; */
         text-align: justify;
-      
        height:50vh ;
-       
          overflow: scroll;
-        width: 100%;
-        
+        width: 100%;  
     }
+
     .auto-biography p{
         font-size: 20px;
         justify-content: center;
         /* border: 2px solid red */
-     
     }
+
+    ::-webkit-scrollbar {
+        width: 10px;
+      }
+      
+      /* Track */
+      ::-webkit-scrollbar-track {
+         background: rgb(160, 170, 169);
+      } 
+      
+      /* Handle */
+      ::-webkit-scrollbar-thumb {
+        /* background: #af0505; */
+      }
+      
+      /* Handle on hover */
+      ::-webkit-scrollbar-thumb:hover {
+        background: rgb(12,75,71);
+      }
     
     /* SERVICES SECTION STARTS HERE  */
     .services{
@@ -1081,11 +1100,15 @@ footer .right a span{
 
 /* APPRAISAL SKITS  */
 .appraisal-skits{
+   display: none;
+}
+
+.appraisal-skits-mobile{
     width: 100%;
     min-height: 100vh;
-    background-color: #e3e9e3;
+    /* background-color: rgb(12,75,71); */
     /* border-bottom: 1px solid #000; */
-    color: black;
+    color: #e3e9e3;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1124,17 +1147,23 @@ footer .right a span{
     height: 300px;
 }
 /* MUSIC  */
-.my-music{
+.my-music-mobile{
     width: 100%;
     height: fit-content;
     display: flex;
     flex-direction: column;
     align-items: center;
+     padding: 1em 0;
+     background-color: #e6ebe6;
+     /* color: #e3e9e3; */
 }
 .music{
+    width: 90%;
+    height: fit-content;
     display: flex;
     flex-direction: column;
     text-align: center;
+   
     /* align-items: center;
     justify-content: center; */
 
@@ -1143,6 +1172,10 @@ footer .right a span{
     font-size: 18px;
     color: black;
     font-weight: 600;
+}
+.music a{
+    color: rgb(12,75,71);
+    font-size: 20px;
 }
 
 
