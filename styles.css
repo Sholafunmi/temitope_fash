@@ -101,6 +101,9 @@ color: rgb(154, 245, 239);
     color: rgb(211, 209, 200);
     }
 
+    #more{
+        display: none;
+    }
 /* DESKTOP RESPONSIVENES  */
 @media only screen and (min-width:928px){
 main{
@@ -910,8 +913,9 @@ footer .right a span{
     }
     .auto-biography{
         text-align: justify;
-       height:50vh ;
-         overflow: scroll;
+        height: fit-content;
+       /* height:50vh ; */
+         /* overflow: scroll; */
         width: 100%;  
     }
 
@@ -921,24 +925,21 @@ footer .right a span{
         /* border: 2px solid red */
     }
 
-    ::-webkit-scrollbar {
+    /* ::-webkit-scrollbar {
         width: 10px;
       }
-      
-      /* Track */
+    
       ::-webkit-scrollbar-track {
          background: rgb(160, 170, 169);
       } 
       
-      /* Handle */
       ::-webkit-scrollbar-thumb {
-        /* background: #af0505; */
+       
       }
       
-      /* Handle on hover */
       ::-webkit-scrollbar-thumb:hover {
         background: rgb(12,75,71);
-      }
+      } */
     
     /* SERVICES SECTION STARTS HERE  */
     .services{
@@ -1105,9 +1106,10 @@ footer .right a span{
 }
 
 .appraisal-skits-mobile{
-    width: 100%;
+    width: 100vh;
     min-height: 100vh;
-    /* background-color: rgb(12,75,71); */
+    background-color: rgb(2, 10, 10);
+    /* background-color: rgb(1, 10, 10); */
     /* border-bottom: 1px solid #000; */
     color: #e3e9e3;
     display: flex;
@@ -1125,6 +1127,9 @@ footer .right a span{
     justify-content: center;
     align-items: center;
     gap: 3em;
+}
+.appraisal-contents h1{
+font-size: 23px;
 }
 .appraisal-videos{
     /* width: inherit; */
